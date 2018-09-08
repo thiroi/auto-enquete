@@ -18,8 +18,8 @@ Enquete.say("test dayo")
 
 driver.navigate.to "https://ssl.pc.moppy.jp/login/" #URL指定
 
-driver.find_element(:name => "mail").send_keys('tomokazu.hiroi@gmail.com')
-driver.find_element(:name => "pass").send_keys('seraphic3')
+driver.find_element(:name => "mail").send_keys(mail)
+driver.find_element(:name => "pass").send_keys(pass)
 driver.find_element(:class_name, "a-btn__login").click
 
 driver.navigate.to "http://pc.moppy.jp/research/"
